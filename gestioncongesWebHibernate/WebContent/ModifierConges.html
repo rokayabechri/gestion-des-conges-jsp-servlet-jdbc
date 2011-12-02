@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form  method="POST" action="ModifierCongesControleur">
+<table border="1">
+<tr>
+<td><label>ID  :</label></td><td><input type="text" name="ID"/></td>
+	</tr>
+	<td><label>ID USER :</label></td><td><input type="text" name="ID_USER"/></td>
+	</tr>
+	<tr>
+	<td><label> DATE DEBUT :</label></td><td><input type="text" name="DATE_DEBUT"/></td>
+	</tr>
+	<tr>
+	<tr>
+	<td><label> DATE FIN :</label></td><td><input type="text" name="TYPE"/></td>
+	</tr>
+	<td><label> TYPE :</label></td>
+	<td><select name="typeConges" size="">
+	    <option value="CP"> CP</option>
+	    <option value="RTT">RTT</option>
+	    <option value="RECUPERATION">RECUPERATION</option>
+	    <option value="ANCIENNETE">ANCIENNETE</option>
+	   </select>
+	</td>
+	</tr>
+	
+	<tr>
+	<td><label> COMENTAIRE :</label></td>
+	<td><textarea name="COMMENTAIRE" rows=10 cols=40 ></textarea></td>
+	</tr>
+	<tr>
+	<td><input type="submit" value="VALIDER"/></td>
+    </tr>
+    </table>
+  </form>
+</body>
+</html>

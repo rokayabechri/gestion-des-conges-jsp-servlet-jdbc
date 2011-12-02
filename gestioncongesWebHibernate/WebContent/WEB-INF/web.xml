@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>gestioncongesweb</display-name>
+  <welcome-file-list>
+    <welcome-file>Login.jsp</welcome-file>
+    <welcome-file>PoserConges.html</welcome-file>
+    <welcome-file>ModifierConges.html</welcome-file>
+    <welcome-file>acceuil.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description>Servlet de controle de la page de login</description>
+    <display-name>LoginControleur</display-name>
+    <servlet-name>LoginControleur</servlet-name>
+    <servlet-class>com.aston.rh.gestionconges.controle.LoginControleur</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginControleur</servlet-name>
+    <url-pattern>/LoginControleur</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Servlet de controle de la page de PoserConges</description>
+    <display-name>PoserCongesControlleur</display-name>
+    <servlet-name>PoserCongesControlleur</servlet-name>
+    <servlet-class>com.aston.rh.gestionconges.controle.PoserCongesControlleur</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PoserCongesControlleur</servlet-name>
+    <url-pattern>/PoserCongesControlleur</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Servelet de controle de la page ModifierConges</description>
+    <display-name>ModifierCongesControleur</display-name>
+    <servlet-name>ModifierCongesControleur</servlet-name>
+    <servlet-class>com.aston.rh.gestionconges.controle.ModifierCongesControleur</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModifierCongesControleur</servlet-name>
+    <url-pattern>/ModifierCongesControleur</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ListerDemandeControlleur</display-name>
+    <servlet-name>ListerDemandeControlleur</servlet-name>
+    <servlet-class>com.aston.rh.gestionconges.controle.ListerDemandeControlleur</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListerDemandeControlleur</servlet-name>
+    <url-pattern>/ListerDemandeControlleur</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description></description>
+    <display-name>GererDemandeEmployeControlleur</display-name>
+    <servlet-name>GererDemandeEmployeControlleur</servlet-name>
+    <servlet-class>com.aston.rh.gestionconges.controle.GererDemandeEmployeControlleur</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GererDemandeEmployeControlleur</servlet-name>
+    <url-pattern>/GererDemandeEmployeControlleur</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>StatuerControleur</display-name>
+    <servlet-name>StatuerControleur</servlet-name>
+    <servlet-class>com.aston.rh.gestionconges.controle.StatuerControleur</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StatuerControleur</servlet-name>
+    <url-pattern>/StatuerControleur</url-pattern>
+  </servlet-mapping>
+  
+    <jsp-config>
+    <taglib>
+      <taglib-uri>jstl-core</taglib-uri>
+      <taglib-location>/WEB-INF/tld/c.tld </taglib-location>
+    </taglib>
+    <taglib>
+      <taglib-uri>jstl-fmt</taglib-uri>
+      <taglib-location>/WEB-INF/tld/fmt.tld </taglib-location>
+    </taglib>
+  </jsp-config>
+  
+</web-app>
